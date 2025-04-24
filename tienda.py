@@ -17,7 +17,7 @@ if total >= 350000:
     print= (f"el total de la compra con descuento es: {total_con_descuento}")
 
 else:print("no cumples para el descuento. ")
-print=(f"el total de la compra es:")
+
 
 
 
