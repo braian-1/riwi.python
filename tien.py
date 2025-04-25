@@ -1,5 +1,5 @@
 
-
+#Aqui el usuario va poder ingresar el el nombre del producto,el precio y la cantidad.
 
 productos:str=input("ingrese el producto:")
 precio = int(input("ingrese el precio:"))
@@ -24,14 +24,8 @@ if total >= 250000:
 else:
     print("no cumples para el descuento. ")
 
-
-print("nombre del producto: ", productos)
-print("valor del producto: ", precio)
+#Aqui el usuario va a ver le producto adquirido, el precio y la cantidad del producto que adquirio.
+print("nombre del producto adquirido: ", productos)
+print("valor del producto adquirido: ", precio)
 print("cantidad del producto: ", cantidad)
 print("precio final: ", total)
-
-
-
-
-
-
