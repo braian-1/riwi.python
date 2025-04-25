@@ -1,5 +1,5 @@
 
-#Aqui el usuario va poder ingresar el el nombre del producto,el precio y la cantidad.
+#Aqui el usuario va poder ingresar el nombre del producto, el precio y la cantidad.
 
 productos:str=input("ingrese el producto:")
 precio = int(input("ingrese el precio:"))
