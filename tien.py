@@ -1,5 +1,7 @@
 
-productos:str= input("ingrese el producto:")
+
+
+productos:str=input("ingrese el producto:")
 precio = int(input("ingrese el precio:"))
 cantidad = int(input("ingrese la cantidad del producto:"))
 descuento=float()
@@ -27,6 +29,8 @@ print("nombre del producto: ", productos)
 print("valor del producto: ", precio)
 print("cantidad del producto: ", cantidad)
 print("precio final: ", total)
+
+
 
 
 
