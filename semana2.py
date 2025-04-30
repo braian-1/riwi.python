@@ -1,4 +1,3 @@
-
 option = input ("""INGRESE UNA OPCION:
 1.REVISION DE UNA NOTA
 2.PROMEDIO
@@ -9,7 +8,7 @@ option = input ("""INGRESE UNA OPCION:
 if int(option) == 1:
 
     nota = int(input("INGRESE UNA NOTA: "))
-    if nota > 70:
+    if nota >= 70:
         print("GANO LA NOTA")
     else:
         print("PERDIO LA NOTA")
