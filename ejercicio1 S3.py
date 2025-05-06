@@ -1,15 +1,11 @@
 CantidadEstudiantes = input("INGRESE LA CANTIDAD DE ESTUDIANTES: ")
 for i in range(1,int(CantidadEstudiantes)+1):
-    estudiantes = input(f"el nombre del estuadiante {i}:")
-    for j in range (3):
-        notas = int(input("ingrese tres notas de 0 a 5:\n"))
+        def estudiantes():    
+            nombre = input(f"el nombre del estuadiante:")    
+            nota1 = float(input("primera nota de 0 a 5: "))
+            nota2 = float(input("segunda nota de 0 a 5: "))
+            nota3 = float(input("tercera nota de 0 a 5: "))
+            return nombre, nota1,nota2,nota3
 
-def datos(estudiantes, i):
-            nombre = estudiantes
-            notas = i
-            return nombre, notas 
 
-estudiantes, i = datos (estudiantes, i)
-print(estudiantes)
-print(notas)
-
+        
