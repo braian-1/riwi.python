@@ -1,4 +1,4 @@
-menu = int(input("""Desea ingresar al menu?
+menu = int(input("""DESEA INGRESAR AL MENU?
 1.si
 2.no\n"""))
 if menu == 1:
@@ -13,7 +13,7 @@ while menu:
     print("5.Salir\n")
     
 
-    opcion = input ("Elige una opcion: \n")
+    opcion = input ("ELIGE UNA OPCION: \n")
 
 
     inventario = {
@@ -83,8 +83,8 @@ while menu:
                     print(f"El producto {nuevo_producto} con precio {nuevo_precio:.2f} ha sido añadido al inventario")
                 except ValueError:
                     print("El precio ingresado no es un numero valido. El producto no se ha podido añadir. ")
-                    print("\n El inventario se a actualizado.")
-                    print(inventario) 
+                print("\n El inventario se a actualizado.")
+                print(inventario) 
 
 
 
