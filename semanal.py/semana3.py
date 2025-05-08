@@ -1,11 +1,11 @@
-menu = int(input("""DESEA INGRESAR AL MENU?
+main = int(input("""DESEA INGRESAR AL MENU?
 1.si
 2.no\n"""))
-if menu == 1:
-     menu = True
+if main == 1:
+     main = True
 else:
-     menu = False
-while menu:
+     main = False
+while main:
     print()
     print("1.Buscar producto y cambio de precio")
     print("2.Eliminar producto")
@@ -13,9 +13,9 @@ while menu:
     print("4.Calculo del inventario")
     print("5.Salir\n")
     
-    opcion = input ("ELIGE UNA OPCION: \n")
+    option = input ("ELIGE UNA OPCION: \n")
 
-    inventario = {
+    inventory = {
             'computador': (950000, 7),
             'teclado': (75000, 17),
             'mouse' : (70000, 8),
@@ -23,99 +23,99 @@ while menu:
             'cables':(75000, 11)
     }
     
-    if opcion == "1":
+    if option == "1":
             print()
             print("------------------------------------------------------------")
             print("--ESTAS EN LA OPCION DE BUSCAR PRODUCTO Y CAMBIO DE PRECIO--")
             print("------------------------------------------------------------")
             print()
 
-            print(inventario)
-            def buscar_producto(nombre):
-                if nombre in inventario:
-                    resultado = nombre
-                    print(resultado)
+            print(inventory)
+            def buscar_producto(name):
+                if name in inventory:
+                    result = name
+                    print(result)
 
-                    precio = int(input("dame el precio\n"))
-                    inventario[nom_pro] = (precio, inventario[nom_pro][1])
-                    print(inventario)
-                    return f"El producto {nombre} esta en la lista."
+                    price = int(input("dame el precio\n"))
+                    inventory[nom_pro] = (price, inventory[nom_pro][1])
+                    print(inventory)
+                    return f"El producto {name} esta en la lista."
                 else:
-                    print(f"El producto {nombre} no se encontrado en la lista. ")
+                    print(f"El producto {name} no se encontrado en la lista. ")
                     return 
             nom_pro=input("ingrese el nombre del producto que desea buscar:\n ")
             buscar_producto(nom_pro)
 
 
-    elif opcion == "2":
+    elif option == "2":
             print()
             print("-----------------------------------------------")
             print("-----ESTAS EN LA OPCION ELIMINAR PRODUCTO------")
             print("-----------------------------------------------")
             print()
-            print(inventario)
+            print(inventory)
 
-            producto_eliminar = input("ingrese el nombre del producto que desea eliminar:\n ")
+            product_delete = input("ingrese el nombre del producto que desea eliminar:\n ")
 
-            if producto_eliminar in inventario:
-                del inventario[producto_eliminar]
-                print(f"El producto {producto_eliminar} ha sido eliminado con exito del invetario.")
+            if product_delete in inventory:
+                del inventory[product_delete]
+                print(f"El producto {product_delete} ha sido eliminado con exito del invetario.")
                 print("\n el inventario de productos actualizado")
-                print(inventario) 
+                print(inventory) 
             else:
-                print(f"el producto{producto_eliminar} no se ha encontrado.")
+                print(f"el producto{product_delete} no se ha encontrado.")
         
 
-    elif opcion == "3":
+    elif option == "3":
             print()
             print("-----------------------------------------------")
             print("------ESTAS EN LA OPCION AÑADIR PRODUCTO-------")
             print("-----------------------------------------------")
             print()
-            nuevo_producto = input("ingrese el nombre del nuevo producto:\n")
+            new_product = input("ingrese el nombre del nuevo producto:\n")
             try:
-                nuevo_precio_str = input(f"ingrese el precio de {nuevo_producto}: \n")
-                nuevo_precio = int(nuevo_precio_str)
-                if nuevo_precio < 0:
+                new_price_str = input(f"ingrese el precio de {new_product}: \n")
+                new_price = int(new_price_str)
+                if new_price < 0:
                      raise ValueError
-                cantidad_producto_str = input(f"ingresa la cantidad del nuevo producto:\n")
-                cantidad_producto = int(cantidad_producto_str)
-                if cantidad_producto < 0:
+                product_quantity_str = input(f"ingresa la cantidad del nuevo producto:\n")
+                product_quantity = int(product_quantity_str)
+                if product_quantity < 0:
                      raise ValueError
-                inventario[nuevo_producto] =  nuevo_precio,cantidad_producto
-                print(f"El producto {nuevo_producto} con precio {nuevo_precio:.2f} y con cantidad {cantidad_producto:.2f} ha sido añadido al inventario")
+                inventory[new_product] =  new_price,product_quantity
+                print(f"El producto {new_product} con precio {new_price:.2f} y con cantidad {product_quantity:.2f} ha sido añadido al inventario")
                 print("\n El inventario se a actualizado.")
-                print(inventario) 
+                print(inventory) 
             except ValueError:
                 print("El precio ingresado no es un numero valido. El producto no se ha podido añadir. ")
             
 
 
-    elif opcion == "4":
+    elif option == "4":
             print()
             print("-----------------------------------------------")
             print("---ESTAS EN LA OPCION CALCULO DE INVENTARIO----")
             print("-----------------------------------------------")
             print()
-            calculo_inventario = (inventario["mouse"][0]*
-                inventario["mouse"][1]+
-                inventario["teclado"][0]*
-                inventario["teclado"][1]+
-                inventario["computador"][0]*
-                inventario["computador"][1]+
-                inventario["usb"][0]*
-                inventario["usb"][1]+
-                inventario["cables"][0]*
-                inventario["cables"][1])
-            print(f"El promedio total del inventario es:\n{calculo_inventario}")
+            inventory_calculation = (inventory["mouse"][0]*
+                inventory["mouse"][1]+
+                inventory["teclado"][0]*
+                inventory["teclado"][1]+
+                inventory["computador"][0]*
+                inventory["computador"][1]+
+                inventory["usb"][0]*
+                inventory["usb"][1]+
+                inventory["cables"][0]*
+                inventory["cables"][1])
+            print(f"El promedio total del inventario es:\n{inventory_calculation}")
 
-    elif opcion == "5":
+    elif option == "5":
         print("Has seleccionado salir. Adios")
         break
     else:
         print("opcion invalida, intente de nuevo")
-        menu = int(input("""Desea volver al menu?
+        main = int(input("""Desea volver al menu?
         1.si
         2.no\n"""))
-        if menu == 2:
+        if main == 2:
             break
