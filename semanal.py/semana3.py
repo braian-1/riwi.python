@@ -33,6 +33,7 @@ while main:
             print(inventory)
             def buscar_producto(name):
                 if name in inventory:
+                    
                     result = name
                     print(result)
 
@@ -41,7 +42,7 @@ while main:
                     print(inventory)
                     return f"El producto {name} esta en la lista."
                 else:
-                    print(f"El producto {name} no se encontrado en la lista. ")
+                    print(f"El producto {name} no se a encontrado en la lista. ")
                     return 
             nom_pro=input("ingrese el nombre del producto que desea buscar:\n ")
             buscar_producto(nom_pro)
@@ -72,22 +73,28 @@ while main:
             print("------ESTAS EN LA OPCION AÑADIR PRODUCTO-------")
             print("-----------------------------------------------")
             print()
-            new_product = input("ingrese el nombre del nuevo producto:\n")
-            try:
-                new_price_str = input(f"ingrese el precio de {new_product}: \n")
-                new_price = int(new_price_str)
-                if new_price < 0:
-                     raise ValueError
-                product_quantity_str = input(f"ingresa la cantidad del nuevo producto:\n")
-                product_quantity = int(product_quantity_str)
-                if product_quantity < 0:
-                     raise ValueError
-                inventory[new_product] =  new_price,product_quantity
-                print(f"El producto {new_product} con precio {new_price:.2f} y con cantidad {product_quantity:.2f} ha sido añadido al inventario")
-                print("\n El inventario se a actualizado.")
-                print(inventory) 
-            except ValueError:
-                print("El precio ingresado no es un numero valido. El producto no se ha podido añadir. ")
+            while True:    
+                new_product = input("ingrese el nombre del nuevo producto:\n")
+                if new_product in inventory:
+                    print(f"El producto {new_product} ya esta en el inventario.")
+                    continue
+                else:
+                    try:
+                        new_price_str = input(f"ingrese el precio de {new_product}: \n")
+                        new_price = int(new_price_str)
+                        if new_price < 0:
+                            raise ValueError
+                        product_quantity_str = input(f"ingresa la cantidad del nuevo producto:\n")
+                        product_quantity = int(product_quantity_str)
+                        if product_quantity < 0:
+                            raise ValueError
+                        inventory[new_product] =  new_price,product_quantity
+                        print(f"El producto {new_product} con precio {new_price:.2f} y con cantidad {product_quantity:.2f} ha sido añadido al inventario")
+                        print("\n El inventario se a actualizado.")
+                        print(inventory)
+                        break 
+                    except ValueError:
+                        print("El precio ingresado no es un numero valido. El producto no se ha podido añadir. ")
             
 
 
