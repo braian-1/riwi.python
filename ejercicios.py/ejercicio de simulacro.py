@@ -4,8 +4,8 @@ inventory = [
         {"TITULO": "La bella", "PRECIO":100000, "CANTIDAD":80},
         {"TITULO": "Los simpson", "PRECIO":80000, "CANTIDAD":87},
         {"TITULO": "Perros", "PRECIO":150000, "CANTIDAD":99}
-
     ]
+#aqui el usuario va a poder añadir un libro nuevo 
 def addBook ():
     new_book = input("ingrese el nombre del nuevo libro: \n")
     
@@ -21,7 +21,7 @@ def addBook ():
     inventory.append(new)
     print("El libro fue agregado exitosamente.")
 
-
+#aqui el usuario va a poder consultar un libro 
 def consultbook ():
     consult_book = input("Cual es el libro que desea consultar:\n").lower()
 
@@ -32,16 +32,16 @@ def consultbook ():
     else:
             print(f"el libro {consult_book} no esta en el inventario")
 
-
+#aqui el usuario va a poder cambiarle el precio al libro
 def updateprice():
     update_price = input("cual es el libro al que le desea cambiar el precio:\n")
     for i in inventory:
         if i['TITULO'].lower() == update_price.lower():
-            nuevoPrecio = float (input("Ingrese el nuevo precio:"))
-            i['PRECIO'] = nuevoPrecio  
+            newprice = float (input("Ingrese el nuevo precio:"))
+            i['PRECIO'] = newprice  
             print("El precio fue cambiado")
 
-
+#aqui el usuario va a poder borrar algun libro
 def removeBook():
     print(inventory)
     book_delete = input("ingrese el libro que desea borrar:\n").lower()
@@ -64,9 +64,10 @@ main = int(input("""Desea ingresar al menu
 if main == 1:
     main = True
 else:
-    main=False
+    main = False
 
 while main:
+
     print()
     print("1.Añadir libros al inventario")
     print("2.Consultar libro en el inventario")
@@ -75,9 +76,11 @@ while main:
     print("5.Mostrar libros")
     print("6.Salir\n")
     print()
+
     print()
     option = input("ingrese una opcion: ")
     print()
+#el macth sirve para organizar de una manera mas clara y sencilla
     match option:
          
         case '1':
