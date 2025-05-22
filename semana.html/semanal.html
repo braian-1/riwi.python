@@ -1,51 +1,77 @@
-<link rel="stylesheet" href="css/estilo.css">
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <title>Mi portafolio personal</title>
-        <meta name="description" content="personal portfolio of Braian as a riwi developer. ">
-    </head>
-    <body>
-        <div style="text-align: center;"><h1>Braian Cardona - riwi developer</h1></div>
-        <section>
-           <div style="text-align: center;"><h2>Sobre mi</h2></div>
-            <div style="text-align: center;"><p>Hola, soy Braian Cardona.</p>
-            <p>Me gusta crear páginas web o aplicaciones. También me gusta hacer deporte en mi tiempo libre</p>
-            <p>y por la tarde o por la noche juego play. </p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio personal</title>
+    <meta name="descripcion" content="portafolio personal de Braian un developer de riwi">
+    <link rel="stylesheet" href="css/estilo.css"> 
+    <script src="https://kit.fontawesome.com/2193d055c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Braian - riwi developer</h1>
+    <nav>
+    <header>
+        <nav id="navbar">
+            <div class="logo">Braian<span>Cardona - riwi developer</span></div>
+        </nav>
+    </header>
+    <main>
+        <section id="Inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Braian Cardona </h1>
+                    <h2>Sobre mi</h2>
+                    <p>Apasionado por crear sitios web unicos y funcinales. siempre buscando apreder
+                        nuevas tecnologias y habilidades</p>
+                        <a href="contacto.html" class="btn">contacto</a>
+                </div>
+            </div>
+        <section id="Habilidades" class="Habilidades">
+            <h2 class="section-title">Habilidades de desarrollo</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>UN POCO DE CONOCIMIENTO Y HABILIDAD EN</h4>
+                        <ul class="skills">
+                            <li>-Html</li>
+                            <li>-Python</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
-    </div>
-        <div style="text-align: center;"><h3>Lista de habilidades</h3></div>
-        <div style="text-align: center;"><ul>
-            <li>Python</li>
-            <li>Python</li>
-        </ul></div>
-            <section>
-           <div style="text-align: center;"><h2>proyectos</h2></div>
-            <div style="text-align: center;"><table></div>
+            <table>
                 <tr>
-                    <th>NOMBRE</th>
-                    <th>TECNOLOGIAS</th>
-                    <th>LINK</th>
-                </tr>
-                <tr>
-                    <td>Ejercicio</td>
-                    <td>HTML</td>
-                    <td><a href="https://github.com/braian-1/riwi.python/blob/master/ejcercicios.html/ejercicio%20receta.html">view project</a></td>
+                    <th>El nombre del proyecto es galeria
+                    <a href="https://github.com/braian-1/riwi.python/blob/master/ejcercicios.html/ejercicio%20galeria.html">Proyecto</a></th>
+                    <th>tecnologias usadas:
+                        <ul>
+                        <li>html</li>
+                        </ul>
+                    </th>
                 </tr>
             </table>
-            <div style="text-align: center;"><h3>proyecto 1</h3></div>
-            <div style="text-align: center;"><p>Este es mi primer proyecto solo utilizando html.</p></div>
+        <section id="Proyectos" class="Proyectos">
+            <h2>Proyectos Personales</h2>
+            <div class="Proyectos-container">
+                <div class="Proyectos-card">
+                    <div class="Proyectos-img">
+                        <img src="./Captura desde 2025-05-21 09-51-52.png" alt="Proyecto 1" width="300" height="300">
+                        <P>Este es mi primer codigo y lo que hace es mostrar la receta de un postre y el paso a paso para realizarlo</P>
+                        <p>Aqui podras vermas mas de mis proyectos</p>
+                        <a href="https://github.com/braian-1" target="_blank"><i class="fa-brands fa-square-github"></i>GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
         </section>
-        <div style="text-align: center;"><img src="../ejcercicios.html/Captura desde 2025-05-21 09-51-52.png"  width="280"></div>
-        <a href="https://github.com/braian-1" target="_blank">GitHub</a>
-        <nav>
-            <a href="#proyectos">proyectos</a>
-        </nav>
-    </body>
-    <a href="contacto.html">
-        <div style="text-align: center;"><button>Contacto</button></div>
-    </a>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy;2025 Braian Cardona</p>
+        </div>
+    </footer>
+    </nav>
+</body>
 </html>
-
