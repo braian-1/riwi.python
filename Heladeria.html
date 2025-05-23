@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ejercicio</title>
+</head>
+<body>
+
+    <h1>Heladeria</h1>
+
+    <form>
+        <fieldset>
+            <legend>datos clientes</legend>
+
+            <label for="nombre_cliente">nombre cliente</label>
+            <input type="text" id="nombre_cliente" />
+            <br/>
+
+            <label for="Telefono_cliente">Telefono cliente</label>
+            <input type="tel" id="Telefono_cliente" />
+            <br/>
+
+            <label for="email_cliente">email cliente</label>
+            <input type="email" id="email" />
+            <br/>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Elige Tu Helado</legend>
+
+            <h2>Sabor</h2>
+            <input type="radio" name="Sabor" id="vainilla" value="vainilla">vainilla<br/>
+            <input type="radio" name="Sabor" id="arequipe" value="arequipe">arequipe<br/>
+            <input type="radio" name="Sabor" id="chocolate" value="chocolate">chocolate<br/>
+
+            <h2>Recipiente</h2>
+
+            <input type="radio" name="Sabor" id="vaso" value="vaso">vaso<br/>
+            <input type="radio" name="Sabor" id="cono" value="cono">cono<br/>
+
+            <h2>Extras</h2>
+
+            <input type="checkbox" name="Extras[]" id="caramelo" value="caramelo">caramelo<br/>
+            <input type="checkbox" name="Extras[]" id="chipas de colores" value="chispas de colores">chispas de colores<br/>
+            <input type="checkbox" name="Extras[]" id="chicle" value="chicle">chicle<br/>
+            <input type="checkbox" name="Extras[]" id="chocolate" value="chocolate">chocolate<br/>
+            <input type="checkbox" name="Extras[]" id="lecherita" value="lecherita">lecherita<br/>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
