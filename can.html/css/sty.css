@@ -1,0 +1,30 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+.field {
+    width: 800px;
+    height: 600px;
+    background-color: #16aa61;
+    padding: 40px;
+    color: #fff;
+    margin: 40px;
+    box-shadow: 0 16px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.inner{
+    border: 4px solid;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.middle-line{
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+}
