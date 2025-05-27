@@ -1,18 +1,22 @@
 div {
-    color: rgb(0, 0, 0);
+    color: blue;
+    font-size: 19px;
 }
 
 .highlight{
-    color: rgb(0, 255, 179);
+    color: red;
 }
 
 #special {
-    color: rgb(0, 0, 0);
+    color: green;
 }
 
 body{
-    background-color: #f0f0f0;
+    background: linear-gradient(
+        15deg,#ffffff,#ff0000,#ffffff
+    );
 }
+
 .box{
     background-color: #ffffff;
     border: 2px solid #000;
@@ -25,15 +29,16 @@ body{
     width: 300px;
     padding: 20px;
     margin: 10px;
-    border: 5px solid #333;
+    border: 5px solid #000000;
 }
 
 .inline-block{
     display: inline-block;
     width: 100px;
     height: 100px;
-    background-color: lightblue;
+    background-color: rgb(225, 0, 255);
 }
+
 .fixed-box{
     position: fixed;
     top: 10px;
@@ -73,5 +78,7 @@ a:hover{
         opacity: 1;
     }
 }
+
+
 
 
