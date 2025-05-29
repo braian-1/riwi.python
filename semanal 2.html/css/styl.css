@@ -15,6 +15,10 @@ body{
     background: linear-gradient(
         100deg,#ffffff,#05e2ff,#ffffff
     );
+display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .box{
@@ -53,6 +57,15 @@ body{
     height: 100px;
     background-color: yellow;
     transform: rotate(0deg);
+    animation: fade 2s ease-in-out;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .box::before{
@@ -65,19 +78,6 @@ body{
     transform: rotate(390deg);
     transition: 2s;
     animation: rotar 5s linear infinite;
-}
-
-.fade-in{
-    animation: fade 2s ease-in-out;
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 
