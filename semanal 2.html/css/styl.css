@@ -1,5 +1,5 @@
 div {
-    color: rgb(0, 255, 76);
+    color: rgb(0, 153, 255);
     font-size: 19px;
 }
 
@@ -8,17 +8,16 @@ div {
 }
 
 #special {
-    color: rgb(17, 0, 255);
+    color: rgb(0, 255, 13);
 }
 
 body{
     background: linear-gradient(
-        100deg,#ffffff,#05e2ff,#ffffff
+        100deg,#000000,#ff0000,#ffffff,#05e2ff,#ffffff,#ff0000,#000000
     );
-display: flex;
-  flex-direction: column;
-  align-items: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box{
@@ -51,14 +50,16 @@ display: flex;
     padding: 10px;
 }
 
-
 .rotate-box {
     width: 100px;
     height: 100px;
-    background-color: yellow;
+    background: linear-gradient(
+        90deg,#ff0000,#000000
+    );
     transform: rotate(0deg);
     animation: fade 2s ease-in-out;
 }
+
 @keyframes fade {
     0% {
         opacity: 0;
@@ -84,8 +85,8 @@ display: flex;
 .interactivity a{
     color: rgb(255, 0, 0);
 }
+
 a:hover{
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
-
