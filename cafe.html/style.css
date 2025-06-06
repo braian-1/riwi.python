@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.webp .header{
+    background-image: url(Imagen\ pegada.png);
+}
+
+.header {
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo__nombre {
+    color: white;
+   
+}
+
+.logo{
+    margin: 20px;
+    
+}
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    padding-right: 2rem;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+@media (min-width: 768px){
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+}}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nuestro-blog img{
+    width: 773.333px;
+    height: 531.667px;
+}
+
+img{
+    max-width: 100%;
+}
+
+img{
+    border-style: none;
+}
+
+img{
+    box-sizing: inherit;
+}
+.sidebar {
+    display: table-cell;
+}
+
+
+        header h2{
+            margin-top: 0;
+        }
+
+    .sidebar {
+        width: 30%;
+        background: #f8f8f8;
+        border-left: 0.0625rem solid #dbdbdb;
+        padding: 2em;
+    }
+
+        .sidebar .widget:first-child h3{
+            margin-top: 0;
+        }

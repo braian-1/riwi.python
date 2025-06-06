@@ -21,10 +21,8 @@ h1{
 }
 
 .caja__columna div{
-    color: white;
-    background: linear-gradient(
-        45deg, red,black,red
-    );
+    display: flex;
+    background-color: rgb(119, 249, 253);
     padding: 2em;
 }
 

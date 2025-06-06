@@ -1,0 +1,39 @@
+.audio-container{
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.audio-container figure{
+    margin: 0;
+    padding: 0;
+}
+
+.audio-container audio{
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.audio-container figcaption{
+    text-align: center;
+    color: #000000;
+}
+
+.audio-container figcaption h2{
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.audio-container figcaption p{
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #ffffff;
+}

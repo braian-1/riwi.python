@@ -33,6 +33,11 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: red;
 }
 
 main{
@@ -46,13 +51,14 @@ main{
 }
 
 .grid-item{
-    color: white;
+    font-size: 28px;
+    color: black;
     padding: 20px;
     border: 1px solid #000000;
     text-align: center;
     flex: 1;
     background: linear-gradient(
-        45deg,red,black,red
+        45deg,white,red,white,white,red,white
     );
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
@@ -122,4 +128,13 @@ h2{
         margin-left: 0%;
         width: 100%;
     }
+}
+
+p{
+    color: black;
+}
+
+h1{
+    font-weight: 100;
+    
 }
