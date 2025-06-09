@@ -1,7 +1,12 @@
 *{
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,body{
+    font-family:'roboto', sans-serif;
+    line-height: 1.5;
 }
 
 body{
@@ -18,35 +23,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: red;
+    background: rgb(1, 247, 255);
     border-radius: 10px;
     position: sticky;
     top: 1.5rem;
     z-index: 99;
 }
-
-header h1{
-    text-transform: uppercase;
-}
-
-header h1 span:nth-child(1){
-    font-weight: 300;
-    font-style: italic;
-    font-size: 1.6625rem;
-    
-}
-
-header h1 span:nth-last-child(1){
-    font-weight: 500;
-    
-}
-
+/*Este es para modificar la lista*/
 header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
- 
 }
 
 .container{
@@ -65,35 +53,29 @@ header nav ul {
     justify-content: center;
 }
 
-
-html,body{
-    font-family:'roboto', sans-serif;
-    line-height: 1.5;
-}
 .container .card{
     background: rgb(0, 0, 0);
     color: white;
     width: 330px;
     height: 430px;
-    border-radius: 4px;
+    border-radius: 15px;
     box-shadow: 0 10px 10px rgb(255, 255, 255);
     overflow: hidden;
     margin: 20px;
     text-align: center;
     transition: all 0.25s; 
-    
 }
 
 nav ul li a{
     color: rgb(255, 255, 255);
 }
-
+/*Este que al momento de pasar el mouse por encima de la palabra cambie de color*/
 nav ul li a:hover{
     color: rgb(0, 0, 0);
 }
 
 img{
-    width: 250px;
+    width: 260px;
     height: 150px;
 }
 
@@ -103,22 +85,23 @@ h1{
     font-size: 48px;
 }
 
-
 footer{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
+    margin: 20px;
 }
-
+/*Este es para modificar el campo de contacto*/
 #contactoForm {
+    box-shadow: 5px 5px 5px  5px rgb(255, 255, 255);
     background: black;
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
     padding: 20px;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     background-color: #000000;
-    font-family: sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 label{
@@ -136,12 +119,93 @@ textarea{
     box-sizing: border-box;
 }
 
+.card a{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    border: none;
+    border-radius: none;
+    background: none;
+}
+/*Este es para cambiar el color de la palabra saber mas al momento de pasar el cursor*/
+.card a:hover{
+    color: rgb(0, 0, 0);
+}   
+
+p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+/*Para que cambie al momento de pasar el mouse por encima de las cartas con los proyectos*/
+.card:hover{
+    background: linear-gradient(
+        45deg,#000000,#00f7ff,#000000)
+}
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.redes i{
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+/*Al momento de pasar el mouse los iconos de las redes sociales cambien de color*/
+.redes i:hover{
+    background: linear-gradient(#000000,#00f7ff,#000000);
+    border-radius: 10px 5px;
+}
+/*Esto es una animacion infinata que va cambiando de colores*/
+header::before,
+header::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    top: -15px;
+    left: -15px;
+    border-radius: 8px;
+    background: linear-gradient(
+        90deg,#fff000,#00ff00,
+        #0099ff,#001aff,#ff0000,
+        #ff0055,#ff0000,#0099ff,
+        #00a1ff,#a200ff);
+    background-size: 300%;
+    animation: border 12s linear infinite;
+}
+
+header::after{
+    filter: blur(50px);
+}
+/*Este seria para una animacion*/
+@keyframes border{
+    0%,100%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 300%;
+    }
+}
+
+/*Esto seria para que funcione correctamente en escritorios*/
 @media (min-width:1024px){
     section{
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
+/*Esto seria para que funcione correctamente en tablet*/
 @media (max-width:768px){
     section{
         grid-template-columns: repeat(2, 1fr);
@@ -152,10 +216,12 @@ textarea{
     }
 }
 
+/*Esto seria para que funcione correctamente en movil*/
 @media (max-width:480px){
     section{
         grid-template-columns: 1fr;
     }
+
     header{
         flex-direction: column;
         align-items: flex-start;
@@ -166,7 +232,7 @@ textarea{
         align-items: flex-start;
     }
 }
-
+/* Esto lo que hace es una transicion*/
 @keyframes slidein{
     from{
         margin-left: 100%;
@@ -179,11 +245,3 @@ textarea{
     }
 }
 
-.card a{
-    color: red;
-    font-weight: 900;
-    box-shadow: 0 5px 5px rgb(255, 0, 0);
-    border: none;
-    border-radius: none;
-    background: none;
-}
