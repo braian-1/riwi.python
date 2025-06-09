@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <span>Portafolio Braian</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Presentacion Personal</h1>
+            <p>Me llamo Braian, tengo 19 años, me gusta la programacion ya que me llama mucho la atencion el como crear una aplicacion o una pagina.</p>
+        </section>
+
+        <section>
+            <h1>Portafolio</h1>
+
+            <div class="container">
+
+            <div class="card">
+                <img src="Imagen pegada.png">
+                <h3>Rotacion</h3>
+                <p>Este es una ejercicio en el cual se hace girar un objeto</p>
+                <a href="https://github.com/braian-1">Leer mas</a>
+            </div>
+
+            <div class="card">
+                <img src="Receta.png">
+                <h3>Receta Postre</h3>
+                <p>En este lo que hago es hacer una receta de un postre en la cual indica el paso a paso de la preparacion</p>
+                <a href="https://github.com/braian-1">Leer mas</a>
+            </div>
+
+            <div class="card">
+                <img src="Enlaces.png">
+                <h3>Enlaces</h3>
+                <p>En este lo que hago es hacer enlaces a otros sitios web</p>
+                <a href="https://github.com/braian-1">Leer mas</a>
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>Contacto</h1>
+            <form id="contactoForm" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>&copy; 2025 Braian</footer>
+
+</body>
+</html>
