@@ -42,6 +42,7 @@ header nav ul {
     background-color: none;
     transform: translateY(-4px);
     display: flex;
+    flex-wrap: wrap; /*Es para cuando no quepa en el espacio se acomode de forma correcta*/
     justify-content: center;
     padding: 15px;
 }
