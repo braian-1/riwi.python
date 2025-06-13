@@ -1,28 +1,39 @@
-let input = document.getElementById("inputBox")
-let buttons = document.querySelectorAll("button")
+const pantalla = document.querySelector(".pantalla");
+const botones = document.querySelectorAll(".btn");
 
-let string = "";
-let arr = Array.from(buttons);
-arr.forEach(button => {
-    button.addEventListener("click",(e) =>{
-        if(e.target.innerHTML == "="){
-            string=eval(string);
-            input.value = string;
+botones.forEach(boton => {
+    boton.addEventListener("click", ()=>{
+        const botonApretado = boton.textContent;
+
+        if(boton.id === "c") {
+            pantalla.textContent = "0";
+            return;
         }
 
-        else if(e.target.innerHTML == "AC"){
-            string = "";
-            input.value = string;
+        if(boton.id === "borrar") {
+            if(pantalla.textContent.length === 1 || pantalla.textContent === "Error!") {
+                pantalla.textContent = "0";
+            }else{
+                pantalla.textContent = pantalla.textContent.slice(0, -1);
+            }
+            return;
         }
 
-        else if(e.target.innerHTML == "DEL" ){
-            string = string.substring(0,string.length-1);
-            input.value = string;
+        if(boton.id === "igual") {
+            try{
+                pantalla.textContent = eval(pantalla.textContent);
+            } catch{
+                pantalla.textContent = "Error!";
+            }
+            pantalla.textContent = eval(pantalla.textContent);
+            return;
         }
 
-        else{
-            string += e,target.innerHTML;
-            input.value = string;
+        if(pantalla.textContent === "0"  || pantalla.textContent === "Error!") {
+            pantalla.textContent = botonApretado;
+        }else{
+             pantalla.textContent += botonApretado;
         }
+
     })
 })
