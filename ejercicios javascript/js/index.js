@@ -117,3 +117,6 @@ let objeto = "programacion";
 console.log("Me gusta",accion,objeto);
 
    
+const edad = 20;
+const puedebeber = edad >= 18 ? "si puede beber." : "no puede beber.";
+console.log(puedebeber);
