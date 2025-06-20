@@ -1,18 +1,25 @@
 
 .container{
     margin-top: 35px;
-    background-color: none;
+    background: white;
     transform: translateY(-4px);
     display: flex;
     justify-content: center;
     padding: 15px;
+    color: #000000;
+    border-radius: 20px;
+    width: 100%;
+    
 }
+
+
 
 .container .card {
     margin: 800px;
     padding: 0 2px;
     box-sizing: border-box 0.10;
     justify-content: center;
+    border: #ffffff;
 }
 
 html,body{
@@ -22,12 +29,13 @@ html,body{
 .container .card{
     width: 330px;
     height: 430px;
-    border-radius: 4px;
-    box-shadow: 0 2px 2px rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0);
     overflow: hidden;
     margin: 20px;
     text-align: center;
     transition: all 0.25s; 
+    color: #000000;
 }
 
 
@@ -317,7 +325,15 @@ header{
     }
 }
 
+header nav ul li{
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
 
+header nav ul li:hover{
+    color: white;
+}
 
 
 

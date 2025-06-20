@@ -42,3 +42,4 @@ if (edad < 18) {
 
 console.log("Adios");
 alert("Adios");
+    
