@@ -1,9 +1,9 @@
 console.log("!Gestion de datos con objetos, Sets y Maps¡");
 
 const productos = {
-    1: { id: 1, nombre: "Laptop",precio: 1500},
-    2: { id: 2, nombre: "Mouse",precio: 25},
-    3: { id: 3, nombre: "Teclado",precio: 50}
+    1: { id: 1, nombre: "Guayos",precio: 1500},
+    2: { id: 2, nombre: "Uniformes",precio: 25},
+    3: { id: 3, nombre: "Medias",precio: 50}
 };
 
 console.log("Objeto productos:",productos);
@@ -12,9 +12,9 @@ const setProductos = new Set(Object.values(productos).map(producto => producto.n
 console.log("set de productos unicos:", setProductos);
 
 const mapProductos = new Map([
-    ["Electronica","laptop"],
-    ["accesorios","mouse"],
-    ["accesorios","teclado"]
+    ["deportivo","guayos"],
+    ["deportivo","uniformes"],
+    ["deportivo","medias"]
 ]);
 
 console.log("Map de productos y categorias:",mapProductos);
