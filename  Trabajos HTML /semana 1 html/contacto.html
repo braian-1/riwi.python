@@ -1,10 +1,26 @@
 <link rel="stylesheet" href="css/estilo.css">
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <div style="text-align: center;"><h1>Contacto</h1></div>
-    </head>
-<form id="contactoForm" action="#" method="post">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 class="tituContac">Contacto</h1>
+    <header>
+        <nav id="navbar">
+            <div class="logo">Braian<span>Cardona - riwi developer</span></div>
+
+            <ul>
+                <li><a href="sobre mi.html">Inicio</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="contactoForm" action="#" method="post">
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" required>
 
@@ -15,8 +31,27 @@
     <textarea id="mensaje" name="mensaje" required></textarea>
 
     <input type="submit" value="Enviar">
+    
 </form>
-<a href="semanal.html">
-    <div style="text-align: center;"><button>Inicio</button></div>
-</a>
+    <footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/braian-1"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="sobre mi.html">Inicio</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2025; Designed by <span class="designer">Braian</span></p>
+        </div>
+    </div>
+    </footer>
+</body>
 </html>

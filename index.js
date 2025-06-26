@@ -89,3 +89,87 @@ class Person {
 const person6 = new Person("Cardona", 23)
 person6.sayHello()
 console.log(person6)
+
+
+//CLASES
+//1
+class Person{
+    constructor(name,age,alias){
+        this.name = name
+        this.age = age
+        this.alias = alias
+    }
+}
+
+let person = new Person("braian",20,"brian")
+let person7 = new Person("david",20,"davi")
+console.log(person)
+console.log(person7)
+
+//2
+class Person2{
+    constructor(name,age,alias){
+        this.name = name
+        this.age = age
+        this.alias = alias
+    }
+    walk(){
+        console.log("La persona camina")
+    }
+}
+
+let person10 = new Person2("moure",34,"MoureDev")
+console.log(person10)
+person10.walk()
+
+//Herencia
+class Animal{
+    constructor(name){
+        this.name = name
+    }
+
+    sound(){
+        console.log("El animal emite un sonido generico")
+    }
+}
+
+class Dog extends Animal{
+    sound(){
+        console.log("Guau")
+    }
+
+    run(){
+        console.log("El perro corre")
+    }
+}
+
+class Fish extends Animal{
+
+    constructor(name){
+        super(name)
+        this.size = size
+    }
+
+    swim(){
+        console.log("El pez nada")
+    }
+}
+
+let myDog = new Dog ("Rocky")
+myDog.run()
+myDog.sound()
+
+let myFish = new Fish("RockyFish",20)
+myFish.swim()
+myFish.sound()
+
+
+//Metodos estaticos 
+
+class MathOperations{
+    static sum(a,b){
+        return a + b
+    }
+}
+
+console.log(MathOperations.sum(5,10))
