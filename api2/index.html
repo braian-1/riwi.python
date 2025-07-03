@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Buscar pokemon</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-
-    <h1>Buscar pokemon</h1>
-
-    <div class="buscador">
-        <input type="text" id="nombrePokemon" placeholder="Ej:pikachu">
-        <button onclick="buscarPokemon()">Buscar</button>
+    <img src="Imagen pegada.png" class="logo" alt="">
+    <div class="contenedor">
+        <input type="text" id="caja" placeholder="Ingresa un numero">
+        <button class="text-white btn bg-danger" id="button">Buscar</button>
+        <img src="" id="img" class="pokemon" alt="">
+        <p id="info" class="text-white"></p>
     </div>
-
-    <div class="resultado">Aqui aparecera el pokemon</div>
 </body>
 </html>
 <script src="index.js"></script>
