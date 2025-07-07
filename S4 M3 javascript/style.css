@@ -1,0 +1,23 @@
+*{
+    background: gray;
+}
+
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+#userForm{
+    margin: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#output{
+    text-align: center;
+}
+
