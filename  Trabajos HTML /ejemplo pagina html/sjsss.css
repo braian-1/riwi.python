@@ -39,7 +39,7 @@ p{
     }
 
 img{
-    max-width: 100%;
+    width: 400px;
     height: auto;
 }
 
@@ -61,6 +61,8 @@ a{
     box-shadow: 0 0 0.625rem rgba(0,0,0,.3);
 }
 
+
+
 #cabecera{
     
     text-align: center;
@@ -75,6 +77,12 @@ a{
     padding: 0;
     list-style: none;
     background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 60px;
+    
 }
 
 #area-contenido{
@@ -112,4 +120,13 @@ a{
     color: white;
     text-align: center;
     padding: 1em 0;
+}
+
+.img3{
+    width: 250px;
+}
+
+.contenido-pagina4{
+    display: flex;
+    justify-content: center;
 }
