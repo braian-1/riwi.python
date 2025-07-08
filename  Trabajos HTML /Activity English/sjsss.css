@@ -12,7 +12,7 @@ body{
 h1, h2, h3, h4, h5{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    color: #00e1ff;
+    color: #000000;
     line-height: 1.4em;
 }
 h1{
@@ -44,13 +44,13 @@ img{
 }
 
 a{
-    color: #00e1ff;
+    color: #000000;
     text-decoration: none;
     transition: all 0.2s linear;
 }
 
     a:hover{
-        color: #2e6225;
+        color: #ff0000;
     }
 
 .container{
@@ -130,3 +130,4 @@ a{
     display: flex;
     justify-content: center;
 }
+
