@@ -96,3 +96,11 @@
     font-size: 12px;
 }
 
+.title {
+    text-align: center;
+    background: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
