@@ -1,0 +1,22 @@
+{
+    "visitantes": [
+        {
+            "id": "1",
+            "name": "cardona",
+            "usuario":"cardo123",
+            "email": "mail@email",
+            "password": "1234",
+            "rol":"visitante"
+        }
+    ],
+    "bibliotecarios": [
+        {
+            "id": "1",
+            "name": "bermudez",
+            "usuario":"bermu123",
+            "email": "info@inmail",
+            "password": "5678",
+            "rol":"bibliotecario"
+        }
+    ]
+}
