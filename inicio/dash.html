@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panel CRUD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 id="welcomeText">Panel</h2>
+    <button onclick="logout()">Cerrar sesión</button>
+
+    <div id="formContainer" style="display: none;">
+      <form id="crudForm">
+        <input type="text" id="name" placeholder="Nombre" required />
+        <input type="email" id="email" placeholder="Correo" required />
+        <button type="submit">Guardar</button>
+      </form>
+    </div>
+
+    <table>
+      <thead>
+        <tr><th>Nombre</th><th>Email</th><th>Acciones</th></tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
