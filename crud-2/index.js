@@ -3,8 +3,8 @@ var selectedRow = null;
 function showAlert(message, className) {
     const div = document.createElement("div");
     div.className = `alert alert-${className}`;
-
     div.appendChild(document.createTextNode(message));
+
     const container = document.querySelector(".container");
     const main = document.querySelector(".main");
     container.insertBefore(div, main);
@@ -27,12 +27,13 @@ document.querySelector("#student-form").addEventListener("submit", (e) => {
     const lastName = document.querySelector("#lastName").value;
     const rollNo = document.querySelector("#rollNo").value;
 
-    if (firstName == "" || lastName == "" || rollNo == "") {
+    if (firstName === "" || lastName === "" || rollNo === "") {
         showAlert("Please fill in all fields", "danger");
     }
     else {
-        if (selectedRow == null) {
-            const list = document.querySelector("#student-list");
+        const list = document.querySelector(".student-list");
+        if (selectedRow === null) {
+            const list = document.querySelector(".student-list");
             const row = document.createElement("tr");
 
             row.innerHTML = `
@@ -61,7 +62,7 @@ document.querySelector("#student-form").addEventListener("submit", (e) => {
 });
 
 
-document.querySelector("student-list").addEventListener("click", (e) => {
+document.querySelector(".student-list").addEventListener("click", (e) => {
     target = e.target;
     if (target.classList.contains("edit")) {
         selectedRow = target.parentElement.parentElement;
@@ -69,15 +70,10 @@ document.querySelector("student-list").addEventListener("click", (e) => {
         document.querySelector("#lastName").value = selectedRow.children[1].textContent;
         document.querySelector("#rollNo").value = selectedRow.children[2].textContent;
     }
-});
-
-
-//Delete Data
-document.querySelector("#student-list").addEventListener("click", (e) => {
-    target = e.target;
-    if (target.classList.contains("delete")) {
+    if(target.classList.contains("delete")) {
         target.parentElement.parentElement.remove();
         showAlert("student Data Deleted", "danger");
     }
 });
+
 
