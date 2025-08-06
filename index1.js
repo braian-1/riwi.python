@@ -44,7 +44,7 @@ function step2(callback){
         console.log("paso 2 completado")
         callback()
     }, 1000)
-}
+};
 
 
 function step3(callback){
